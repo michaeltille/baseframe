@@ -1,0 +1,54 @@
+/* line 23, ../sass/base/_typography.scss */
+h1 {
+  font-size: 200%;
+}
+
+/* line 23, ../sass/base/_typography.scss */
+h2 {
+  font-size: 180%;
+}
+
+/* line 23, ../sass/base/_typography.scss */
+h3 {
+  font-size: 160%;
+}
+
+/* line 23, ../sass/base/_typography.scss */
+h4 {
+  font-size: 140%;
+}
+
+/* line 23, ../sass/base/_typography.scss */
+h5 {
+  font-size: 120%;
+}
+
+/* line 23, ../sass/base/_typography.scss */
+h6 {
+  font-size: 100%;
+}
+
+/* line 31, ../sass/base/_typography.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 32, ../sass/base/_typography.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 33, ../sass/base/_typography.scss */
+.underline {
+  text-decoration: underline;
+}
+
+/* line 36, ../sass/base/_typography.scss */
+.quiet {
+  font-color: #949494;
+}
+
+/* line 37, ../sass/base/_typography.scss */
+.loud, .bold {
+  font-color: black;
+}
