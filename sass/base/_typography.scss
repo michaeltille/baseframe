@@ -1,9 +1,13 @@
 //Variables Configuration
 
-//font family default 
+$base-color: #616161;
+$quiet-color: lighten($base-color, 20%);
+$loud-color: darken($base-color, 50%);
+
+//font family default
 $font-family-default: "serif";
 $font-weight-default: 400;
-$font-size-default: 16px;
+$font-size-default: 16px !default;
 $font-color-default: $base-color;
 
 //font family header
@@ -20,18 +24,48 @@ $line-height-default:  floor(($font-size-default * $line-height-variable)) !defa
 //Header Configuration
 //header size setting
 @each $h in h1, h2, h3, h4, h5, h6 {
-    #{$h} { 
+    #{$h} {
       font-size: $font-size-header-default;
       }
 
      $font-size-header-default: $font-size-header-default - 20%;
-  }
+ }
 
- //font styles
-.italic { font-style: italic; }
-.bold   { font-weight: 700; @extend .loud; }
-.underline { text-decoration: underline;}
+ body {
+   color: $font-color-default;
+   font-size: $font-size-default;
+   font-family: $font-family-default;
+   font-weight: $font-weight-default;
+   line-height: $line-height-default;
+ }
 
-//font technical colors
-.quiet { font-color: $quiet-color; }
-.loud  { font-color: $loud-color; }
+
+//Pre-Setting
+
+ .typography {
+   i, em { @extend .italic; }
+   b, strong { @extend .bold; }
+
+   h1, .h1 { @extend .h1; margin: 1em 0 0.5em; }
+   h2, .h2 { @extend .h2; margin: 1em 0 0.5em; }
+   h3, .h3 { @extend .h3; margin: 1em 0 0.5em; }
+   h4, .h4 { @extend .h4; margin: 1em 0 0.5em; }
+   h5, .h5 { @extend .h5; margin: 1em 0 0.5em; }
+   h6, .h6 { @extend .h6; margin: 1em 0 0.5em; }
+
+   p, ul, ol, pre {  }
+
+   ul { }
+   ol { }
+
+   pre, code { }
+ }
+
+  //font styles
+ .italic { font-style: italic; }
+ .bold   { font-weight: 700; @extend .loud; }
+ .underline { text-decoration: underline;}
+
+ //font technical colors
+ .quiet { font-color: $quiet-color; }
+ .loud  { font-color: $loud-color; }
