@@ -1,0 +1,22 @@
+.base-header {
+    background-color: lighten($base-color, 57%);
+    position: relative;
+    
+    h1 { @extend .left; margin: 0 !important; }
+
+    ul {
+        @extend .right;
+        position: relative;
+        top: 55px;
+        font-size: 85%;
+
+        li {
+            @extend .left;
+            margin: 0 6px;
+
+            a {
+                color: lighten($base-color, 20%);
+            }
+        }
+    }
+}

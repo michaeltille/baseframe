@@ -1,17 +1,22 @@
 //Variables Configuration
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300';
 
 $base-color: #616161;
 $quiet-color: lighten($base-color, 20%);
 $loud-color: darken($base-color, 50%);
+$brand-color-1: #fc5c59; //red
+$brand-color-2: #00bcff; //blue
+$brand-color-3: #56c34b; //green
 
 //font family default
-$font-family-default: "serif";
+$font-family-default: "Montserrat";
+$font-family-secondary: Roboto;
 $font-weight-default: 400;
 $font-size-default: 16px !default;
 $font-color-default: $base-color;
 
 //font family header
-$font-family-header-default: "sans-serif";
+$font-family-header-default: "Montserrat";
 $font-weight-header-default: 600;
 $font-size-header-default: 200%;
 $font-color-header-default: darken($font-color-default, 50%);
@@ -29,43 +34,45 @@ $line-height-default:  floor(($font-size-default * $line-height-variable)) !defa
       }
 
      $font-size-header-default: $font-size-header-default - 20%;
- }
+}
 
- body {
+body {
    color: $font-color-default;
    font-size: $font-size-default;
    font-family: $font-family-default;
    font-weight: $font-weight-default;
    line-height: $line-height-default;
- }
+}
 
+//font styles
+.sec-font { font-family: $font-family-secondary; }
+.italic { font-style: italic; }
+.bold   { font-weight: 700; @extend .loud; }
+.underline { text-decoration: underline;}
+
+//font technical colors
+.quiet { color: $quiet-color; }
+.loud  { color: $loud-color; }
+.red { color: $brand-color-1; }
+.blue { color: $brand-color-2; }
+.green { color: $brand-color-3; }
+.wht { color: white !important; opacity: 0.9; }
+.left { float: left; }
+.right { float: right; }
+.mrg-ctr { margin: auto; }
 
 //Pre-Setting
 
- .typography {
-   i, em { @extend .italic; }
-   b, strong { @extend .bold; }
+i, em { @extend .italic; }
+b, strong { @extend .bold; }
 
-   h1, .h1 { @extend .h1; margin: 1em 0 0.5em; }
-   h2, .h2 { @extend .h2; margin: 1em 0 0.5em; }
-   h3, .h3 { @extend .h3; margin: 1em 0 0.5em; }
-   h4, .h4 { @extend .h4; margin: 1em 0 0.5em; }
-   h5, .h5 { @extend .h5; margin: 1em 0 0.5em; }
-   h6, .h6 { @extend .h6; margin: 1em 0 0.5em; }
+h1, .h1 { @extend .h1; margin: 1em 0 0.5em; }
+h2, .h2 { @extend .h2; margin: 1em 0 0.5em; }
+h3, .h3 { @extend .h3; margin: 1em 0 0.5em; }
+h4, .h4 { @extend .h4; margin: 1em 0 0.5em; }
+h5, .h5 { @extend .h5; margin: 1em 0 0.5em; }
+h6, .h6 { @extend .h6; margin: 1em 0 0.5em; }
 
-   p, ul, ol, pre {  }
+ul, ol { margin: 0; padding: 0; list-style: none;}
 
-   ul { }
-   ol { }
-
-   pre, code { }
- }
-
-  //font styles
- .italic { font-style: italic; }
- .bold   { font-weight: 700; @extend .loud; }
- .underline { text-decoration: underline;}
-
- //font technical colors
- .quiet { font-color: $quiet-color; }
- .loud  { font-color: $loud-color; }
+a { text-decoration: none; color: $base-color; outline: 0;}
