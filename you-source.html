@@ -14,7 +14,16 @@
         <header class="base-header">
             <div class="container">
                 <div class="row">
-                    <nav class="col-md-12 typ">
+                    <nav class="col-md-12">
+
+                        <div class="toggle-menu" style="display: none;">
+                            <ul>
+                                <li><a href="#">How We Work</a></li>
+                                <li><a href="#">Work With Us</a></li>
+                                <li><a href="#">Learn From Us</a></li>
+                                <li><a href="#">Try Us</a></li>
+                            </ul>
+                        </div>
                         <h1>
                             <a class="center-block" href="http://www.you-source.com">
                                 <svg id="logo" width="280" height="109" x="0px" y="0px" viewBox="0 0 220.3 86" enable-background="new 0 0 220.3 86">
@@ -115,7 +124,8 @@
                                 </svg>
                             </a>
                         </h1>
-                        <ul>
+                        <a href="#" class="showmenu">Click Here</a>
+                        <ul class="menu">
                             <li><a href="#">How We Work</a></li>
                             <li><a href="#">Work With Us</a></li>
                             <li><a href="#">Learn From Us</a></li>
@@ -128,7 +138,7 @@
         <article class="our-intro">
             <div class="container">
                 <div class="row">
-                    <section class="desc col-md-8 col-md-offset-2">
+                    <section class="desc col-md-8 col-md-offset-2 col-xs-12">
                         <h1>
                             We don't just deliver great user experiences.<br>
                             <span>
@@ -140,7 +150,7 @@
                             We honor our commitment and we stick to our promise. If we do not
                             deliver what we promise—we do the rest of the work for free.
                         </h4>
-                        <h4>
+                        <h4 class="mrg-btm-30">
                             No questions asked.
                         </h4>
                     </section>
@@ -150,7 +160,8 @@
         <article class="our-products">
             <div class="container">
                 <div class="row">
-                    <section class="col-md-4">
+                    <section class="col-md-4 col-xs-12">
+                        <a href="#modal" class="mobile-help-arrow mb-red"><span>&#10095;</span></a>
                         <h2 class="red">Outsourcing
                             <span>Cost effective solutions that sustain growth</span>
                         </h2>
@@ -163,9 +174,10 @@
                                 cost-effective solutions to support this growth
                             </h4>
                         </div>
-                        <a href="#modal" class="button red mrg-ctr arrow">Inquire</a>
+                        <a href="#modal" class="button red mrg-ctr arrow forge">Inquire</a>
                     </section>
-                    <section class="col-md-4 trg-mgc">
+                    <section class="col-md-4 col-xs-12 trg-mgc">
+                        <a href="#modal" class="mobile-help-arrow mb-green"><span>&#10095;</span></a>
                         <h2 class="blue">Product Development
                             <span>Fully managed software development from scratch to MVP at a fixed price</span>
                         </h2>
@@ -177,9 +189,10 @@
                                 while embracing change, reducing risks and maintaining impeccable quality standards.
                             </h4>
                         </div>
-                        <a href="#modal" class="button blue mrg-ctr arrow">Inquire</a>
+                        <a href="#modal" class="button blue mrg-ctr arrow forge">Inquire</a>
                     </section>
-                    <section class="col-md-4">
+                    <section class="col-md-4 col-xs-12">
+                        <a href="#modal" class="mobile-help-arrow mb-blue"><span>&#10095;</span></a>
                         <h2 class="green">Consulting
                             <span>Professionalize your development processes</span>
                         </h2>
@@ -191,7 +204,7 @@
                                 superior results compared to other approaches.
                             </h4>
                         </div>
-                        <a href="#modal" class="button green mrg-ctr arrow">Inquire</a>
+                        <a href="#modal" class="button green mrg-ctr arrow forge">Inquire</a>
                     </section>
 
                 </div>
@@ -200,6 +213,11 @@
         <article class="relationship">
             <div class="container">
                 <div class="row">
+                    <section class="col-md-5 col-md-offset-1 right">
+                        <h2 class="wht">
+                            We <strong class="red">build relationships</strong> with our clients.
+                        </h2>
+                    </section>
                     <section class="col-md-5 col-md-offset-1">
                         <div class="line line-red">
                             <h4 class="wht">
@@ -219,41 +237,80 @@
                             </h4>
                         </div>
                     </section>
-                    <section class="col-md-5 col-md-offset-1">
-                        <h2 class="wht">
-                            We <strong class="red">build relationships</strong> with our clients.
-                        </h2>
-                    </section>
                 </div>
             </div>
         </article>
     </div>
+
+
     <div class="remodal container" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-      <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-      <div>
-            <div class="col-md-7">
-                <h2 class="wht">
-                    We <strong class="red">build relationships</strong> with our clients.
+        <div class="remodal-hold">
+            <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        </div>
+        <div>
+            <div class="col-md-6 col-md-offset-1 col-xs-12">
+                <h2>
+                    You are about <br>to <strong class="green">Inquire</strong>
                 </h2>
+                <div class="line line-green text-left">
+                    <h4>
+                        We guarantee 100% privacy. <br>Your information will not be shared
+
+                        <span>Call us direct at <strong class="blue">+63 (0)2 553 2465</strong></span>
+                    </h4>
+                </div>
             </div>
-            <div class="col-md-5">
-                <h4>Get more information on our services.</h4>
+            <div class="col-md-5 col-xs-12">
                 <form>
+                    <h4 class="text-left">Get more information on our services.</h4>
+                    <div class="form-group db">
+                        <select>
+                            <option>Outsourcing</option>
+                            <option>Product Development</option>
+                            <option>Consulting</option>
+                        </select>
+                    </div>
+                    <p class="help text-left">Kindly provide us with your contact information, our agent will contact
+                    you as soon as possible, have a nice day.</p>
                     <div class="form-group">
                         <input type="text" name="name" value="" placeholder="Name">
                     </div>
                     <div class="form-group">
-                        <input type="text" name="name" value="" placeholder="Name">
+                        <input type="text" name="email" value="" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <input type="text" name="name" value="" placeholder="Name">
+                        <input type="text" name="phone" value="" placeholder="Phone">
                     </div>
+                    <a class="button solid wht" href="#modal2">More Information</a>
                 </form>
             </div>
       </div>
+
+    </div>
+    <div class="remodal container" data-remodal-id="modal2" role="dialog" aria-labelledby="modal2Title" aria-describedby="modal2Desc">
+      <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+      <div class="col-md-12">
+            <div class="thank-you">
+                <h2>
+                    <strong class="blue">Thank</strong> You<br>
+                    Very <strong class="blue">Much</strong>
+                </h2>
+                <div class="line line-blue text-left">
+                    <h4>
+                        Our costumer service representative will immediately contact you based on the information
+                        you provided, for the time being, have a nice day...
+                    </h4>
+                </div>
+                <br>
+                <a href="#" class="blue">Close this Inquiry</a>
+            </div>
+      </div>
+
     </div>
 
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/main.js"></script>
+
     <script src="js/remodal.js"></script>
 
 </html>

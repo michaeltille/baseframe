@@ -36,6 +36,11 @@
 
     section {
         min-height: 550px;
+        position: relative;
+
+        .mobile-help-arrow {
+            display: none;
+        }
 
         &:nth-child(2) {
             h2 {

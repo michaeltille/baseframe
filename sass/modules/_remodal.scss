@@ -1,6 +1,45 @@
-/* ==========================================================================
-   Remodal's default mobile first theme
-   ========================================================================== */
+/* Modifications */
+
+.g-recaptcha {
+    transform:scale(1.042);-webkit-transform:scale(1.042);transform-origin:0 0;-webkit-transform-origin:0 0;
+}
+
+.remodal {
+    h2 {
+        @extend .text-left;
+        font-weight: 400;
+        font-size: 250%;
+        line-height: 1;
+        margin: 0 0 35px;
+
+    }
+    h4 {
+        margin: 0 0 10px;
+
+        span {
+            display: block;
+            margin-top: 10px;
+            color: gray;
+        }
+    }
+
+    .help {
+        font-size: 85%;
+        line-height: 1.3;
+        opacity: 0.7;
+    }
+}
+
+.thank-you {
+    width: 60%;
+    margin: 0 auto 20px;
+
+    h2 {
+        text-align: center;
+        font-size: 300%;
+        margin: 30px 0 40px;
+    }
+}
 
 /* Default theme styles for the background */
 
@@ -42,7 +81,6 @@
 /* Default theme styles of the modal dialog */
 
 .remodal {
-  box-sizing: border-box;
   width: 100%;
   margin-bottom: 10px;
   padding: 35px;
@@ -50,6 +88,7 @@
   color: #2b2e38;
   background: #fff;
   @include border-radius(7px);
+  @include box-shadow(0, 0, 10px, rgba(0, 0, 0, 0.2));
 }
 
 .remodal {
