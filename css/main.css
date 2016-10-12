@@ -2277,7 +2277,7 @@ html.remodal-is-locked {
 
 /* line 1, ../sass/pages/_homepage.scss */
 .our-intro {
-  background: #fff url("http://www.you-source.com/wp-content/themes/underscore/library/images/pages/about/bg-hero.jpg") no-repeat scroll center;
+  background: #fff url("../img/bg-hero.jpg") no-repeat scroll center;
   border-top: 2px solid #00bcff;
 }
 /* line 6, ../sass/pages/_homepage.scss */
@@ -2373,7 +2373,7 @@ html.remodal-is-locked {
 
 /* line 105, ../sass/pages/_homepage.scss */
 .relationship {
-  background: #fff url("http://www.you-source.com/wp-content/themes/underscore/library/images/pages/about/bg-relationships.jpg") no-repeat scroll center;
+  background: #fff url("../img/bg-relationships.jpg") no-repeat scroll center;
   border-top: 3px solid #fc5c59;
 }
 /* line 110, ../sass/pages/_homepage.scss */

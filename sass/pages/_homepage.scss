@@ -1,5 +1,5 @@
 .our-intro {
-    background: #fff url('http://www.you-source.com/wp-content/themes/underscore/library/images/pages/about/bg-hero.jpg') no-repeat scroll center;
+    background: #fff url('../img/bg-hero.jpg') no-repeat scroll center;
     border-top: 2px solid $brand-color-2;
     @extend .cover-dv;
 
@@ -103,7 +103,7 @@
 }
 
 .relationship {
-    background: #fff url('http://www.you-source.com/wp-content/themes/underscore/library/images/pages/about/bg-relationships.jpg') no-repeat scroll center;
+    background: #fff url('../img/bg-relationships.jpg') no-repeat scroll center;
     border-top: 3px solid $brand-color-1;
     @extend .cover-dv;
 
